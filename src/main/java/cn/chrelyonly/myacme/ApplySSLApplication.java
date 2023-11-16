@@ -347,6 +347,7 @@ public class ApplySSLApplication {
     }
 
     public static void main(String... args) {
+        args = new String[]{"chrelyonly.cn","www.chrelyonly.cn"};
         if (args.length == 0) {
             System.err.println("请携带域名参数启动");
             System.exit(1);
