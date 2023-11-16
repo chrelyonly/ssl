@@ -42,8 +42,8 @@ import java.util.Scanner;
  *
  * @author chrelyonly
  */
-@Slf4j
 public class ApplySSLApplication {
+    private static final Logger log = LoggerFactory.getLogger(ApplySSLApplication.class);
     // File name of the User Key Pair
     private static final File USER_KEY_FILE = new File("user.key");
 
@@ -347,7 +347,6 @@ public class ApplySSLApplication {
     }
 
     public static void main(String... args) {
-        args = new String[]{"chrelyonly.cn","www.chrelyonly.cn"};
         if (args.length == 0) {
             System.err.println("请携带域名参数启动");
             System.exit(1);
